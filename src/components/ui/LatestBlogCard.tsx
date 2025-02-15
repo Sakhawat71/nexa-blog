@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
-import { Blog } from "@/types";
+import { IBlog } from "@/types";
 
-const LatestBlogCard = ({ blog }: { blog: Blog }) => {
+const LatestBlogCard = ({ blog }: { blog: IBlog }) => {
   return (
     <div
       key={blog.id}

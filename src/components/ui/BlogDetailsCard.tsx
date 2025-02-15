@@ -1,9 +1,9 @@
-import { Blog } from "@/types";
+import { IBlog } from "@/types";
 import Image from "next/image";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const BlogDetailsCard = ({ blog }: { blog: Blog }) => {
+const BlogDetailsCard = ({ blog }: { blog: IBlog }) => {
   return (
     <div className="w-2/3 bg-white shadow-lg rounded-lg mx-auto p-6">
       <p className="flex items-center justify-center mx-auto text-teal-500 bg-teal-100 w-fit px-3 py-1 rounded-full">

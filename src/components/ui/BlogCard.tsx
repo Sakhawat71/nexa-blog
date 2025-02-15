@@ -1,10 +1,10 @@
-import { Blog } from "@/types";
+import { IBlog } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const BlogCard = ({ blog }: { blog: Blog }) => {
+const BlogCard = ({ blog }: { blog: IBlog }) => {
   return (
     <div className="w-full bg-white shadow-md rounded-lg overflow-hidden">
       <figure>

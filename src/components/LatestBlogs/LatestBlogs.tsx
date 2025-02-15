@@ -1,9 +1,9 @@
 import LatestBlogCard from "../ui/LatestBlogCard";
 import BlogCard from "../ui/BlogCard";
 import Link from "next/link";
-import { Blog } from "@/types";
+import { IBlog } from "@/types";
 
-const LatestBlogs = ({ blogs }: { blogs: Blog[] }) => {
+const LatestBlogs = ({ blogs }: { blogs: IBlog[] }) => {
   return (
     <div className="w-[90%] mx-auto">
       <h1 className="text-3xl text-center my-5 font-bold">
