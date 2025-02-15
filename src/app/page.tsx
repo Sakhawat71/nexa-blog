@@ -7,7 +7,7 @@ const HomePage = async () => {
     });
     const blogs = await res.json();
 
-    console.log(blogs);
+    // console.log(blogs);
 
     return (
         <div className="my-10">
