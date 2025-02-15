@@ -1,7 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { baseApi } from './apis/blogs.slice'
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        [baseApi.reducerPath] : baseApi.reducer,
+    },
+
+    middleware : (GetDefaultMiddleware) => GetDefaultMiddleware().concat(baseApi.middleware),
 })
 
 // export type RootState = ReturnType<typeof store.getState>;
