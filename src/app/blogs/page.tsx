@@ -1,6 +1,11 @@
 import BlogCard from "@/components/ui/BlogCard";
 import { IBlog } from "@/types";
 
+export const metadata = {
+    title : "Blogs | NexaBlog"
+}
+
+
 const BlogsPage =async () => {
 
     const res = await fetch('http://localhost:5000/blogs',{
